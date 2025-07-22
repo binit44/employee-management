@@ -101,6 +101,14 @@ department	    VARCHAR(100)	         Department name
 # Delete Employee Confirmation Dialog
 <img width="979" height="463" alt="image" src="https://github.com/user-attachments/assets/c22d325c-ca84-43dc-95d2-c80ce17a6781" />
 
+# Project Structure Overview
+- Frontend
+<img width="979" height="597" alt="image" src="https://github.com/user-attachments/assets/6acbcd60-e7f2-462c-91d2-0ef0149a3c94" />
+
+- Backend
+<img width="880" height="419" alt="image" src="https://github.com/user-attachments/assets/0bba5a2c-6ee5-4a9c-af20-3a81c086971c" />
+
+
 
 #### For any feedback, report, suggestions, you can contact with anyone of the team members.
 ### THANK YOU
