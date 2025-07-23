@@ -12,7 +12,7 @@ This project is a CRUD (Create, Read, Update, Delete) application for managing e
 - Backend:
   - .NET 8
   - Entity Framework Core
-  - SQLite Database
+  - SQL Server Database
 - Frontend:
   - Angular 19
   - TypeScript
