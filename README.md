@@ -8,6 +8,27 @@ This project is a CRUD (Create, Read, Update, Delete) application for managing e
   - .NET Core Web API for the backend.
   - Angular for the frontend (SPA).
   - SQL Server as the database.
+# Technology Stack
+- Backend:
+  - .NET 8
+  - Entity Framework Core
+  - SQLite Database
+- Frontend:
+  - Angular 19
+  - TypeScript
+  - RxJS
+# Design Decisions
+1. **Standalone Components:**  We used Angular's standalone components to reduce the need for NgModules and simplify the application structure.
+2. **Service-based Architecture:**  The EmployeeService acts as an intermediary between the components and the API, promoting separation of concerns.
+3. **Reactive Programming:** We utilized RxJS Observables for handling asynchronous operations, making the code more maintainable and easier to reason about.
+4. **Routing:** Angular Router was implemented to create a single-page application experience, allowing for seamless navigation between views.
+5. **REST API:** The backend follows RESTful principles, providing a clear and consistent interface for CRUD operations.
+# Challenges Faced
+1. **HttpClient Injection:** Initially, we faced issues with injecting the HttpClient into our services and components. This was resolved by properly providing the HttpClientModule in the AppComponent and using provideHttpClient() in the main.ts file.
+
+2. **Standalone Components Setup:** Transitioning to standalone components required careful management of imports and providers, which was a learning curve but ultimately led to a more streamlined application structure.
+
+3. **Cross-Origin Resource Sharing (CORS):** Ensuring proper CORS configuration on the backend to allow requests from the Angular frontend.
 # Features
 - Add new employee.
 - Edit employee details.
@@ -19,6 +40,15 @@ This project is a CRUD (Create, Read, Update, Delete) application for managing e
 <img width="577" height="201" alt="image" src="https://github.com/user-attachments/assets/3db7c8e4-5f29-4bee-8f18-02e9e0da139f" />
 
 # Installation & Run
+- Clone the repository
+- Backend Setup:
+  - Navigate to the EmployeeManagementAPI directory
+  - Run dotnet restore
+  - Run dotnet run
+- Frontend Setup:
+  - Navigate to the employee-management-system directory
+  - Run npm install
+  - Run ng serve
 - Before running the API server, you have to update the database configuration inside the connection string
 - Update the username and password as per your local database configuration
   ````
@@ -70,17 +100,6 @@ department	    VARCHAR(100)	         Department name
 # Web Page or Mobile App
 - ✅ Web-based Frontend.
 - Built for desktop browsers and mobile-responsive using Tailwind CSS.
-# Environment Details and Dependencies
-- Tool	Version
-- .NET Core
-  - SDK	8.0
-- Angular CLI
-  - 19+
-- Node.js
-  - 18+
-- SQL Server
-- IDEs
-  - VS Code/Visual Studio 2022
 # Backend Dependencies
 - Microsoft.EntityFrameworkCore
 - omelo.EntityFrameworkCore.MySql
