@@ -35,7 +35,7 @@ This project is a CRUD (Create, Read, Update, Delete) application for managing e
 - Delete employee.
 - List all employees with search.
 -  Page navigation with customizable items per page. 
-- olumns are sortable (indicated by ↑ symbol). 
+- Columns are sortable (indicated by ↑ symbol). 
 # 🗄️ ER Diagram
 <img width="577" height="201" alt="image" src="https://github.com/user-attachments/assets/3db7c8e4-5f29-4bee-8f18-02e9e0da139f" />
 
